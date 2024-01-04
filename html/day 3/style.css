@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+p{
+    font-family: Rubik Doodle Shadow;
+    font-size: 50px;
+    color: blue;
+    border-radius: 50px;
+    background: #3b3333;
+    box-shadow:  26px 26px 52px rgb(83, 185, 69),
+     -26px -26px 52px #443636;
+    width: 50%;
+    margin-left: 50px;
+    padding: 50px;
+    
+}
+a{
+    text-decoration: none;
+
+
+
+}
