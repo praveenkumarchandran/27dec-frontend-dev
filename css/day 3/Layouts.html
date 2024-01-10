@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table.tb {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        .tb th, .tb td{
+            padding: 16px;
+            border: 10px solid slateblue;
+        }
+
+        .tb th{
+            background-color: black;
+            color: white;
+        }
+        .flexbox{
+            background-color: slateblue;
+            padding: 16px;
+            display:flex;
+            flex-wrap: wrap;
+  
+        }
+
+        .flexbox > div {
+            background-color: aliceblue;
+            margin: 5px;
+            height: 80px;
+            line-height: 80px;
+            width: 100px;
+            text-align: center;
+            font-size: 21px;
+            flex: auto;
+
+        }
+
+
+        .grid-layout{
+            background-color: aqua;
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu main main main right right'
+            'footer footer footer footer footer footer';
+        }
+
+        .grid-layout > div {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            font-size: large;
+
+
+        }
+        
+
+        
+
+    </style>
+</head>
+<body>
+
+    <table class="tb">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>State/ZIP</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Danny</td>
+            <td>ray</td>
+            <td>Mumbai</td>
+            <td>MI 600012</td>
+            <td>India</td>            
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>Cornell</td>
+            <td>Dallas</td>
+            <td>TX 75002</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Hollander</td>
+            <td>San Antonio</td>
+            <td>TX 78006</td>
+            <td>USA</td>
+          </tr>
+    </table>
+    
+
+
+
+    <div class="flexbox">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+
+    </div>
+
+
+    <div class="grid-layout">
+        <div style="grid-area: header;"><div>
+            <nav>
+                <ul>
+                    about
+                </ul>
+                <ul>contact us </ul>
+            </nav>
+        </div></div>
+        <div style="grid-area: menu; width:500px;">Menu</div>
+        <div style="grid-area: main;">    <div>
+            <img  style="float: right; margin:7px 10px 10px 15px; border: 10px solid red " src="./download.png" alt="this is sample img">
+            Water Lilies and Japanese Bridge represents two of Monet’s greatest
+            achievements: his gardens at Giverny and the paintings they inspired.
+            Monet moved to Giverny in 1883 and immediately began to develop the
+            property. For him, the gardens were both a passion and a second
+            artistic medium. <br /><br />
+          
+            His Asian garden was not part of the original estate; it was
+            located on an adjacent property with a small brook,
+            which he purchased and enlarged into a pond for a water garden
+            in 1893. He transformed the site into an inspired vision
+            of cool greens and calm, reflective waters, enhanced by exotic
+            plants such as bamboo, ginkgo, and Japanese fruit trees and a
+            Japanese footbridge. It was not until 1899, however, that he
+            began a series of views of the site, of which this is one.
+        </div></div>
+        <div style="grid-area: right;">
+<div id="mydiv">
+    <button onclick="clone()">Clone template</button>
+
+    <template>
+        <div>
+            this is a  cloned template
+        </div>
+    </template>
+</div>
+</div>
+        <div style="grid-area: footer;">Footer</div>
+    </div>
+
+
+
+<script>
+    let clone = () => {
+        let template = document.getElementsByTagName("template")[0];
+        let clone = template.content.cloneNode(true);
+        let div = document.getElementById("mydiv");
+        div.append(clone)
+    };
+</script>
+
+
+
+<!-- 
+    html tables 
+    css flexbox
+    css grid
+    css float property
+    css framework -->
+
+</body>
+</html>
