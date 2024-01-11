@@ -1,0 +1,53 @@
+
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+
+h1:hover{
+    border: 5px solid green;
+ 
+}
+
+
+
+
+li:hover:nth-child(2){
+    background-color: green;
+
+}
+/* 
+pseudo element  */
+/* selector::pseudo-element {
+    property:value;
+  } */
+
+p::first-line{
+    font-size: 50px;
+}
+
+.my-button{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 3px solid yellow ;
+}
+
+.my-button:hover{
+    background-color: red;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+a:active{
+    color: red;
+}
+
+
+
+
+
+
+
+
