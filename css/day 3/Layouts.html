@@ -61,6 +61,56 @@
 
 
         }
+
+    
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: yellow;
+           
+            }
+    
+            li{
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: black;
+                padding: 14px 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+    
+            li a:hover:not(.active){
+                background-color: rgb(5, 161, 122);
+                border-radius: 40px;
+            }
+            .active {
+                background-color: rgb(52, 238, 77);
+            }
+    
+            .right{
+                float: right;
+    
+            }
+            li{
+                border: 3px solid rgb(75, 134, 46);
+                margin-right: 10px;
+                border-radius: 50px;
+            }
+    
+            ul{
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+ 
+.margin{
+    margin-top: 50px;
+}
         
 
         
@@ -69,6 +119,19 @@
 </head>
 <body>
 
+<div class="div" >
+    <ul>
+        <li><a href="https://www.google.com">Home</a></li>
+        <li><a href="./nav.html">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="right active"><a  href="#">About</a></li>
+    </ul>
+</div>
+
+
+    
+
+<div class="margin">
     <table class="tb">
         <tr>
             <th>First Name</th>
@@ -100,8 +163,7 @@
           </tr>
     </table>
     
-
-
+</div>
 
     <div class="flexbox">
         <div>1</div>
@@ -121,12 +183,7 @@
 
     <div class="grid-layout">
         <div style="grid-area: header;"><div>
-            <nav>
-                <ul>
-                    about
-                </ul>
-                <ul>contact us </ul>
-            </nav>
+          
         </div></div>
         <div style="grid-area: menu; width:500px;">Menu</div>
         <div style="grid-area: main;">    <div>

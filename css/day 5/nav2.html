@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav2</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: yellow;
+       
+        }
+
+        li{
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: rgb(5, 161, 122);
+            border-radius: 40px;
+        }
+        .active {
+            background-color: rgb(52, 238, 77);
+        }
+
+        .right{
+            float: right;
+
+        }
+        li{
+            border: 3px solid rgb(75, 134, 46);
+            margin-right: 10px;
+            border-radius: 50px;
+        }
+
+        ul{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Nav 2</h1>
+
+    <ul>
+        <li><a href="https://www.google.com">Home</a></li>
+        <li><a href="./nav.html">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="right active"><a  href="#">About</a></li>
+    </ul>
+
+    <!-- <div class="box">
+        <img src="/css/day 3/download.png" alt="">
+    </div>
+
+    .box{
+        border: 2px solid greenyellow;
+        height: 150px;
+        overflow: scroll;
+
+    } -->
+</body>
+</html>
