@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transistion</title>
+
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            background-color: red;
+            transition: width 2s;
+            transition-delay:1.5s ;
+        }
+
+#div1 {
+        transition-timing-function:ease ;
+    }
+
+    div:hover{
+        width: 600px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id="div1">leaniear</div>
+</body>
+</html>
